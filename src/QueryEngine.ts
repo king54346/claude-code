@@ -283,6 +283,7 @@ export class QueryEngine {
 
     headlessProfilerCheckpoint('before_getSystemPrompt')
     // Narrow once so TS tracks the type through the conditionals below.
+    // 3. 用户附加的规则：例如统一使用中文等长期生效
     const customPrompt =
       typeof customSystemPrompt === 'string' ? customSystemPrompt : undefined
     const {

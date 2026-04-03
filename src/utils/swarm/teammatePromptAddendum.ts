@@ -5,6 +5,7 @@
  * It explains visibility constraints and communication requirements.
  */
 
+// 4. 角色和模式附加， 作为子agent调用的时候会约束与父agent的通信方式
 export const TEAMMATE_SYSTEM_PROMPT_ADDENDUM = `
 # Agent Teammate Communication
 

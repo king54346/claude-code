@@ -171,7 +171,7 @@ export function prependBullets(items: Array<string | string[]>): string[] {
       : [` - ${item}`],
   )
 }
-
+// 1. 基础身份： 你不是普通机器人，而是面向软件工程的聊天交互式agent
 function getSimpleIntroSection(
   outputStyleConfig: OutputStyleConfig | null,
 ): string {

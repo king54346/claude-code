@@ -113,6 +113,8 @@ export const getGitStatus = memoize(async (): Promise<string | null> => {
 /**
  * This context is prepended to each conversation, and cached for the duration of the conversation.
  */
+
+//  2. 系统提示词注入： 每轮对话都会把当前环境关键信息注入进去，例如git状态快照，cluade.md，当前日期语言偏好，输入风格等
 export const getSystemContext = memoize(
   async (): Promise<{
     [k: string]: string
